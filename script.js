@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // Your API key
-    const apiKey = '7iAQpx+dLyJBwzA1nm95Ow==cOnMBaAFodnPH2d0';
+    const apiKey = 'YOUR RIDDLES API KEY';
 
     // Elements
     const getRiddleBtn = $('#getRiddleBtn');
@@ -100,9 +100,9 @@ $(document).ready(function () {
 
         // Check the user's answer
         if (userAnswer === actualAnswer) {
-            feedback.text('Correct!').css('color', '#4CAF50'); // Green color for correct feedback
+            feedback.text('Correct!').css('color', '#4CAF50'); 
         } else {
-            feedback.text('Incorrect!').css('color', '#FF0000'); // Red color for incorrect feedback
+            feedback.text('Incorrect!').css('color', '#FF0000'); 
         }
     }
 
@@ -120,7 +120,7 @@ $(document).ready(function () {
                 riddleText.text(currentRiddle.question);
                 answerInput.val('');
                 feedback.text('');
-                answerBtn.show(); // Make sure to show the Answer button after giving another riddle
+                answerBtn.show(); 
             },
             error: function ajaxError(jqXHR) {
                 console.error('Error: ', jqXHR.responseText);
