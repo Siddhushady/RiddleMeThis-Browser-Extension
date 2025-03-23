@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "RiddleMeThis",
+    "version": "1.0",
+    "description": "Get random riddles and test your wit!",
+    "icons": {
+      "48": "riddle-extension-logo.png",
+      "128": "riddle-extension-logo.png"
+    },
+    "action": {
+      "default_icon": "riddle-extension-logo.png",
+      "default_popup": "index.html"
+    },
+    "permissions": [
+      "storage",
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["script.js"]
+      }
+    ]
+  }
+  

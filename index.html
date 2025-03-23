@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RiddleMeThis</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Black background */
+            color: #fff; /* White text */
+        }
+
+        #extension-panel {
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            background-color: #000; /* Black background */
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #logo {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+        }
+
+        #getRiddleBtn {
+            background-color: #ff6961;
+            color: white;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #riddle-text {
+            display: none;
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #fff; /* White text */
+        }
+
+        #answer-input {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #feedback {
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #4CAF50; /* Green color for correct feedback */
+        }
+
+        #buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+
+        #submitBtn {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        #answerBtn,
+        #giveAnotherBtn {
+            background-color: #3498db;
+            color: white;
+        }
+
+        #endButton {
+            background-color: #ff6961;
+            color: #fff;
+        }
+    </style>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+<div id="extension-panel">
+    <img id="logo" src="riddle-extension-logo.png" alt="RiddleMeThis Logo">
+    <button id="getRiddleBtn">Give me a riddle</button>
+    <div id="riddle-text"></div>
+    <input type="text" id="answer-input" placeholder="Your answer...">
+    <div id="feedback"></div>
+    <div id="buttons">
+        <button id="submitBtn">Submit</button>
+        <button id="answerBtn">Answer</button>
+        <button id="giveAnotherBtn">Give me another</button>
+    </div>
+    <button id="endButton">End</button>
+</div>
+
+</body>
+</html>
